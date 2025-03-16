@@ -1,1 +1,1 @@
-"# l-system" 
+# l-system
