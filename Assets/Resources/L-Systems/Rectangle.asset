@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783eaab37f314d3409d40b685465a742, type: 3}
+  m_Name: Rectangle
+  m_EditorClassIdentifier: 
+  background: {r: 0.75, g: 1, b: 0.9737141, a: 0}
+  colors:
+  - {r: 0.8242302, g: 0, b: 1, a: 0}
+  isGradient: 0
+  gradientCount: 0
+  lineMaterial: {fileID: 2100000, guid: 5e549d41237189a4690cdd30591ee7b3, type: 2}
+  lineWidthStart: 2
+  lineWidthEnd: 2
+  rules:
+  - input: 102
+    outputs:
+    - baseWeight: 0
+      output: f+f-f-ff+f+f-f
+  drawInstructions:
+  - input: 102
+    outputs:
+    - baseWeight: 0
+      output: 0
+      parameter: 0
+  - input: 45
+    outputs:
+    - baseWeight: 0
+      output: 1
+      parameter: 0
+  - input: 43
+    outputs:
+    - baseWeight: 0
+      output: 2
+      parameter: 0
+  iterationCount: 4
+  iterationTime: 2
+  drawTime: 0.01
+  turnAngle: 90
+  drawDistance: 10
+  axiom: f+f+f+f

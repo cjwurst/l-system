@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783eaab37f314d3409d40b685465a742, type: 3}
+  m_Name: Sierpinski Arrowhead
+  m_EditorClassIdentifier: 
+  background: {r: 0, g: 0, b: 0, a: 0}
+  colors:
+  - {r: 1, g: 1, b: 1, a: 0}
+  isGradient: 0
+  gradientCount: 0
+  lineMaterial: {fileID: 2100000, guid: 5e549d41237189a4690cdd30591ee7b3, type: 2}
+  lineWidthStart: 1
+  lineWidthEnd: 1
+  rules:
+  - input: 97
+    outputs:
+    - baseWeight: 0
+      output: b-a-b
+  - input: 98
+    outputs:
+    - baseWeight: 0
+      output: a+b+a
+  drawInstructions:
+  - input: 97
+    outputs:
+    - baseWeight: 0
+      output: 0
+      parameter: 0
+  - input: 98
+    outputs:
+    - baseWeight: 0
+      output: 0
+      parameter: 0
+  - input: 43
+    outputs:
+    - baseWeight: 0
+      output: 1
+      parameter: 0
+  - input: 45
+    outputs:
+    - baseWeight: 0
+      output: 2
+      parameter: 0
+  - input: 91
+    outputs:
+    - baseWeight: 0
+      output: 4
+      parameter: 0
+  - input: 93
+    outputs:
+    - baseWeight: 0
+      output: 5
+      parameter: 0
+  iterationCount: 8
+  iterationTime: 2
+  drawTime: 0.01
+  turnAngle: 60
+  drawDistance: 10
+  axiom: '[a]'
